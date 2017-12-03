@@ -1,0 +1,27 @@
+{
+  "name": "joonarahko",
+  "version": "1.0.0",
+  "description": "Basic resume website",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "node-sass ./assets/styles/main.scss -o ./dist",
+    "prefix-css": "postcss ./dist/main.css -o ./dist/main.css",
+    "build": "npm run compile-sass && npm run prefix-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joonarahko/joonarahko.git"
+  },
+  "keywords": [
+    "Resume"
+  ],
+  "author": "Joona Rahko",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "7.1.6",
+    "cssnano": "^3.10.0",
+    "node-sass": "4.7.2",
+    "postcss": "6.0.14",
+    "postcss-cli": "4.1.1"
+  }
+}
